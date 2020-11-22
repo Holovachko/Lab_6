@@ -1,6 +1,7 @@
 x = float(input('x = '))
 y = float(input('y = '))
 n = int(input('n = '))
+z = float(input('z = '))
 mass = [x, x, y]
 mass_i = mass[1] + (mass[2]/2**2)*mass[0]
 mass.append(mass_i)
@@ -11,3 +12,9 @@ while i < n:
     a_i = mass[i - 2] + (mass[i - 1]/2**(i - 1))*mass[i - 3]
     i = i + 1
 print(mass)
+list1 = []
+for j in mass:
+    print(j)
+    if j > z:
+        list1.append(j)
+print(list1)
