@@ -1,0 +1,13 @@
+x = float(input('x = '))
+y = float(input('y = '))
+n = int(input('n = '))
+mass = [x, x, y]
+mass_i = mass[1] + (mass[2]/2**2)*mass[0]
+mass.append(mass_i)
+i = 4
+a_i = mass[2] + (mass[3]/2**3)*mass[1]
+while i < n:
+    mass.append(a_i)
+    a_i = mass[i - 2] + (mass[i - 1]/2**(i - 1))*mass[i - 3]
+    i = i + 1
+print(mass)
