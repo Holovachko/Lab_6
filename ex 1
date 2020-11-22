@@ -1,0 +1,5 @@
+n = int(input('n = '))
+x = int(input('x = '))
+list1 = list(range(x , x+n, 1))
+print(list1)
+print('sum = {0}'.format(sum(list1)/len(list1)))
