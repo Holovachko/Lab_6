@@ -14,7 +14,6 @@ while i < n:
 print(mass)
 list1 = []
 for j in mass:
-    print(j)
     if j > z:
         list1.append(j)
 print(list1)
