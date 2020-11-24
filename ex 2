@@ -13,9 +13,6 @@ elif n == 3:
 elif n >=4:
     mass += [x,x,y]
     print(mass)
-    mass_i = mass[1] + (mass[2] / 2 ** 2) * mass[0]
-    print(mass_i)
-    mass.append(mass_i)
     while n > i:
         a_i = mass[i - 2] + (mass[i - 1] / 2 ** (i - 1)) * mass[i - 3]
         mass.append(a_i)
